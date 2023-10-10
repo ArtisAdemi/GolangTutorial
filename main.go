@@ -88,7 +88,10 @@ func main() {
 	r.HandleFunc("/movies/{id}", deleteMovie).Methods("DELETE")
 
 	fmt.Println("Starting server at port 8080\n")
+	a := 2
+	b := 3
+	c := a + b
 	// from artis ademi
-	fmt.Println("Hello World")
+	fmt.Println(c)
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
